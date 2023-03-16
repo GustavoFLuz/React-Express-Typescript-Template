@@ -12,7 +12,7 @@ app.use('/api', router);
 app.use(express.static('dist/client'));
 
 app.get('*', (_req, res) => {
-  res.sendFile(path.join(path.resolve(), 'client/index.html'));
+  res.sendFile(path.join(path.resolve(), 'dist/client/index.html'));
 });
 
 export default app
